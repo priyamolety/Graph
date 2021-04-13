@@ -1,0 +1,73 @@
+<div>
+    <canvas id="myChart" class="wrapper"></canvas>
+    <button onclick="changeColor()" class="btn btn-primary"> Change Color</button>
+</div>
+
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    
+    let response = fetch('/api/chart.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+            data = data.data
+
+            let regions = []
+            let cases = []
+
+            for (let obj of data) {
+                regions.push(obj.region)
+                cases.push(obj.total_cases)
+            }
+
+            let bargraph = new Chart(myChart, {
+                type: 'doughnut',
+                data: {
+                    labels: regions,
+                    datasets: [{
+                        label: 'Number of Cases',
+                        data: cases,
+                        backgroundColor:['#9DF568','#f46036','#1b998b','#1b998b','#c5d86d','#5fad56','#f2c14e','#f78154','#F57542','#b4436c'],
+                        borderWidth: 2,
+                        borderColor: '#777',
+                        hoverBorderWidth:3,
+                        hoverBorderColor:'#000',
+                    }
+                    ],
+                },
+                options: {
+                    title:{
+                        display:true,
+                        text: 'Number of COVID19 cases in 10 countries',
+                        fontSize:50
+                    },
+
+                    legend:{
+                        position:'bottom'
+                    },
+
+                    layout:{
+                        padding:{
+                            left:50,
+                            right:0,
+                            bottom:0,
+                            top:0
+                        }
+                    }
+
+                   
+                },
+            })
+
+            let chart=bargraph;
+            function changeColor(){
+                bargraph.datasets.backgroundColor=['green']
+            }
+        })
+
+
+</script>
+
+

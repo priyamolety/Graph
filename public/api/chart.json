@@ -1,0 +1,114 @@
+{
+    "data":[
+        {
+            "id":1,
+            "region":"Australia",
+            "total_cases":293481,
+            "deaths":909,
+            "recovered":23031,
+            "death_ratio":0.030973149788741994,
+            "recovery_ratio":0.7847553495979283
+        },
+
+        {
+            "id":2,
+            "region":"Belgium",
+            "total_cases":897474,
+            "deaths":23130,
+            "recovered":0,
+            "death_ratio":0.025772334351747236,
+            "recovery_ratio":0
+        },
+
+        
+        {
+            "id":3,
+            "region":"Canada",
+            "total_cases":1005296,
+            "deaths":23038,
+            "recovered":929085,
+            "death_ratio":0.022916633508936673,
+            "recovery_ratio":0.9241904871798953
+        },
+        
+        {
+            "id":4,
+            "region":"China",
+            "total_cases":10182926,
+            "deaths":4841,
+            "recovered":96611,
+            "death_ratio":0.04754048453780357,
+            "recovery_ratio":0.9487572302585707
+        },
+
+
+        {
+            "id":5,
+            "region":"Denmark",
+            "total_cases":2334101,
+            "deaths":2429,
+            "recovered":221695,
+            "death_ratio":0.010406580694914527,
+            "recovery_ratio":0.9498093483569684
+        },
+
+
+        {
+            "id":6,
+            "region":"Ethopia",
+            "total_cases":2132311,
+            "deaths":2936,
+            "recovered":161226,
+            "death_ratio":0.013763940912564283,
+            "recovery_ratio":0.7558260005344309
+        },
+
+        {
+            "id":7,
+            "region":"India",
+            "total_cases":12485509,
+            "deaths":164623,
+            "recovered":11629289,
+            "death_ratio":0.01318512525200214,
+            "recovery_ratio":0.9314228999394418
+        },
+
+
+        {
+            "id":8,
+            "region":"New Zealand",
+            "total_cases":2507,
+            "deaths":26,
+            "recovered":2420,
+            "death_ratio":0.010370961308336658,
+            "recovery_ratio":0.9652971679297966
+        },
+
+        {
+            "id":9,
+            "region":"Russia",
+            "total_cases":4529576,
+            "deaths":98713,
+            "recovered":4156141,
+            "death_ratio":0.021792989012658137,
+            "recovery_ratio":0.9175563010754207
+        },
+
+
+        
+        {
+            "id":10,
+            "region":"USA",
+            "total_cases":30672256,
+            "deaths":554779,
+            "recovered":0,
+            "death_ratio":0.018087322954007688,
+            "recovery_ratio":0
+        }
+
+
+
+        
+
+    ]
+}
