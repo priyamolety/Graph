@@ -5,6 +5,11 @@ export default class GraphComponent extends Component {
   constructor(...args) {
     super(...args);
   }
+  
+  @action
+  changeColor(){
+    
+  }
 
   
 }
