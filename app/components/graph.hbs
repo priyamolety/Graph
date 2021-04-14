@@ -1,6 +1,6 @@
 <div>
     <canvas id="myChart" class="wrapper"></canvas>
-    <button onclick="changeColor()" class="btn btn-primary"> Change Color</button>
+    <button type="button" {{on "click" this.changeColor}}> Change Color</button>
 </div>
 
 
@@ -61,10 +61,7 @@
                 },
             })
 
-            let chart=bargraph;
-            function changeColor(){
-                bargraph.datasets.backgroundColor=['green']
-            }
+            
         })
 
 
